@@ -1,0 +1,30 @@
+# Author: Jianbo Zhu (zhujianbo@umeng.com)
+#
+# The root file of blade.
+
+proto_library_config(
+  protoc='protoc',
+  protobuf_libs=['#protobuf', '#glog', '#gflags', '#pthread'],
+  protobuf_path='thirdparty',
+  protobuf_incs = ['thirdparty', ],
+)
+
+thrift_library_config(
+  thrift='thrift',
+  thrift_libs=['#thrift', '#glog', '#gflags', '#pthread', '#thriftnb', '#event'],
+  thrift_path='thirdparty',
+  thrift_incs = 'thirdparty',
+)
+
+cc_test_config(
+  dynamic_link=False,
+  heap_check='',
+  gperftools_libs=['#tcmalloc'],
+  gperftools_debug_libs=['#tcmalloc_debug'],
+  gtest_libs=['#gtest', '#pthread'],
+  gtest_main_libs=['#gtest_main']
+)
+
+cc_config(
+  cxxflags='-std=gnu++0x',    
+)
