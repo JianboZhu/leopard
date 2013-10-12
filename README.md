@@ -14,4 +14,4 @@ Note:
 * Rabibit uses 'blade', an advanded building system, as its building tool.
 * It is thread safe.
 * leopard use 'mongoose' as its default http server in cpp version. you can replace it by implementing 'AbstractHttpServer'.
-* leopard is lightweight. 
+* leopard is lightweight and embeddable. 
