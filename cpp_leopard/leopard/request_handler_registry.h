@@ -8,8 +8,8 @@
 // first lookup this registry using its name. The registry returns
 // a reference to the registered object.
 
-#ifndef CPP_RABBIT_RABBIT_REQUEST_HANDLER_REGISTRY_H_
-#define CPP_RABBIT_RABBIT_REQUEST_HANDLER_REGISTRY_H_
+#ifndef CPP_LEOPARD_LEOPARD_REQUEST_HANDLER_REGISTRY_H_
+#define CPP_LEOPARD_LEOPARD_REQUEST_HANDLER_REGISTRY_H_
 
 #include <memory>
 #include <string>
@@ -20,10 +20,10 @@
 #include <boost/thread/mutex.hpp>
 #include <boost/unordered_map.hpp>
 
-#include "cpp_rabbit/util/macros.h"
+#include "cpp_leopard/util/macros.h"
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 // NOTE: This class is THREAD SAFE
 // actually, now we use boost::mutex to provide thread-safe mechanism,
@@ -67,7 +67,7 @@ class RequestHandlerRegistry {
   DISABLE_COPY_AND_ASSIGN(RequestHandlerRegistry);
 };
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard
 
-#endif  // CPP_RABBIT_RABBIT_REQUEST_HANDLER_REGISTRY_H_
+#endif  // CPP_LEOPARD_LEOPARD_REQUEST_HANDLER_REGISTRY_H_

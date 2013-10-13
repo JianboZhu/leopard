@@ -1,14 +1,14 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 //
 
-#include "cpp_rabbit/rabbit/handler/gflags_handler.h"
+#include "cpp_leopard/leopard/handler/gflags_handler.h"
 
 #include <utility>
 
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-#include "cpp_rabbit/util/basic_types.h"
+#include "cpp_leopard/util/basic_types.h"
 
 using std::pair;
 using std::string;
@@ -16,8 +16,8 @@ using std::vector;
 
 using google::CommandLineFlagInfo;
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 namespace {
 // Try to find a flag in 'flags_info' which contains all flags of its host
@@ -138,5 +138,5 @@ string GFlagsHandler::SetFlags(
   return error_msg == "" ? "OK" : error_msg;
 }
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard

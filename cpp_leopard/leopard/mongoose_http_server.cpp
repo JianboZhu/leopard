@@ -1,6 +1,6 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 
-#include "cpp_rabbit/rabbit/mongoose_http_server.h"
+#include "cpp_leopard/leopard/mongoose_http_server.h"
 
 #include <string>
 #include <vector>
@@ -8,9 +8,9 @@
 #include <boost/algorithm/string.hpp>
 #include <gflags/gflags.h>
 #include <glog/logging.h>
-#include "cpp_rabbit/web_server/mongoose/mongoose.h"
+#include "cpp_leopard/web_server/mongoose/mongoose.h"
 
-#include "cpp_rabbit/rabbit/request_handler_registry.h"
+#include "cpp_leopard/leopard/request_handler_registry.h"
 
 // NOTE:
 //   '/tmp/mongoose_error_log_file' is just an example,
@@ -24,8 +24,8 @@ using std::pair;
 using std::string;
 using std::vector;
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 namespace {
 // Parse a string in a form of "n1=v1&n2=v2" into a list of pairs in a
@@ -132,5 +132,5 @@ void MongooseHttpServer::DoStop() {
   ctx_ = NULL;
 }
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard

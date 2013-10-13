@@ -1,6 +1,6 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 //
-// An example to show how to use 'rabbit'
+// An example to show how to use 'leopard'
 //
 
 #include <string>
@@ -9,9 +9,9 @@
 
 #include <boost/bind.hpp>
 
-#include "cpp_rabbit/rabbit/rabbit.h"
+#include "cpp_leopard/leopard/leopard.h"
 
-using namespace cpp_rabbit::rabbit;
+using namespace cpp_leopard::leopard;
 using namespace std;
 
 // Note:

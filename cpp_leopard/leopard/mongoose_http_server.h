@@ -17,17 +17,17 @@
 //      request path, and 'key1=value1&key2=value2' is the parameter list.
 //
 
-#ifndef CPP_RABBIT_RABBIT_MONGOOSE_HTTP_SERVER_H_
-#define CPP_RABBIT_RABBIT_MONGOOSE_HTTP_SERVER_H_
+#ifndef CPP_LEOPARD_LEOPARD_MONGOOSE_HTTP_SERVER_H_
+#define CPP_LEOPARD_LEOPARD_MONGOOSE_HTTP_SERVER_H_
 
-#include "cpp_rabbit/util/macros.h"
+#include "cpp_leopard/util/macros.h"
 
-#include "cpp_rabbit/rabbit/abstract_http_server.h"
+#include "cpp_leopard/leopard/abstract_http_server.h"
 
 struct mg_context;
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 // NOT THREAD SAFE.
 // It CAN be used in a multithread enviroment but the same instance
@@ -50,7 +50,7 @@ class MongooseHttpServer: public AbstractHttpServer {
   DISABLE_COPY_AND_ASSIGN(MongooseHttpServer);
 };
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard
 
-#endif  // CPP_RABBIT_RABBIT_MONGOOSE_HTTP_SERVER_H_
+#endif  // CPP_LEOPARD_LEOPARD_MONGOOSE_HTTP_SERVER_H_

@@ -1,6 +1,6 @@
 # Author: Jianbo Zhu (jbzhu2011@gmail.com)
 #
-# blade BUILD file for the project, rabbit in cpp version
+# blade BUILD file for the project, leopard in cpp version
 
 cc_library(
     name = 'abstract_http_server',
@@ -11,12 +11,12 @@ cc_library(
 ])
 
 cc_library(
-    name = 'rabbit',
-    srcs = 'rabbit.cpp',
+    name = 'leopard',
+    srcs = 'leopard.cpp',
     deps = [ 
       ':mongoose_http_server',
       ':request_handler_registry',
-      '//cpp_rabbit/rabbit/handler:gflags_handler',
+      '//cpp_leopard/leopard/handler:gflags_handler',
       '#glog'
 ])
 
@@ -25,7 +25,7 @@ cc_library(
     srcs = 'mongoose_http_server.cpp',
     deps = [
       ':abstract_http_server',
-      '//cpp_rabbit/web_server/mongoose:mongoose',
+      '//cpp_leopard/web_server/mongoose:mongoose',
       '#boost_system',
       '#boost_thread',
       '#gflags',

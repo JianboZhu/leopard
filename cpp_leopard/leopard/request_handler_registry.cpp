@@ -1,6 +1,6 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 
-#include "cpp_rabbit/rabbit/request_handler_registry.h"
+#include "cpp_leopard/leopard/request_handler_registry.h"
 
 #include <set>
 #include <string>
@@ -13,8 +13,8 @@ using std::string;
 
 using boost::unordered_map;
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 RequestHandlerRegistry::RequestHandlerRegistry() {
 }
@@ -66,5 +66,5 @@ void RequestHandlerRegistry::GetHandlerNameSet(
   }
 }
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard

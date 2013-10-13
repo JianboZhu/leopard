@@ -1,16 +1,16 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 
-#include "cpp_rabbit/rabbit/rabbit.h"
+#include "cpp_leopard/leopard/leopard.h"
 
 #include <boost/thread/once.hpp>
 #include <glog/logging.h>
 
-#include "cpp_rabbit/rabbit/abstract_http_server.h"
-#include "cpp_rabbit/rabbit/handler/gflags_handler.h"
-#include "cpp_rabbit/rabbit/mongoose_http_server.h"
+#include "cpp_leopard/leopard/abstract_http_server.h"
+#include "cpp_leopard/leopard/handler/gflags_handler.h"
+#include "cpp_leopard/leopard/mongoose_http_server.h"
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 namespace {
 
@@ -38,5 +38,5 @@ void RegisterCommonHandlers(AbstractHttpServer* server) {
   server->RegisterHandler("/gflags/set_flags", GFlagsHandler::SetFlags);
 }
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard

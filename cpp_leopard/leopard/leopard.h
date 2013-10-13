@@ -3,13 +3,13 @@
 // Rabbit is a smart(simple, functional, embeddable) online debug framework.
 //
 
-#ifndef CPP_RABBIT_RABBIT_RABBIT_H_
-#define CPP_RABBIT_RABBIT_RABBIT_H_
+#ifndef CPP_LEOPARD_LEOPARD_LEOPARD_H_
+#define CPP_LEOPARD_LEOPARD_LEOPARD_H_
 
-#include "cpp_rabbit/rabbit/abstract_http_server.h"
+#include "cpp_leopard/leopard/abstract_http_server.h"
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 // Get the default http server implemeted by Mongoose.
 AbstractHttpServer& GetDefaultServer();
@@ -17,7 +17,7 @@ AbstractHttpServer& GetDefaultServer();
 // Register all common handlers to 'server'
 void RegisterCommonHandlers(AbstractHttpServer* server);
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard
 
-#endif  // CPP_RABBIT_RABBIT_RABBIT_H_
+#endif  // CPP_LEOPARD_LEOPARD_LEOPARD_H_

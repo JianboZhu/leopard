@@ -34,17 +34,17 @@
 //  server->Stop();
 //
 
-#ifndef CPP_RABBIT_RABBIT_ABSTRACT_HTTP_SERVER_H_
-#define CPP_RABBIT_RABBIT_ABSTRACT_HTTP_SERVER_H_
+#ifndef CPP_LEOPARD_LEOPARD_ABSTRACT_HTTP_SERVER_H_
+#define CPP_LEOPARD_LEOPARD_ABSTRACT_HTTP_SERVER_H_
 
 #include <memory>
 #include <utility>
 #include <vector>
 
-#include "cpp_rabbit/rabbit/request_handler_registry.h"
+#include "cpp_leopard/leopard/request_handler_registry.h"
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 // NOTE:
 //   These three methods are Thread Safe: 'RegisterHandler',
@@ -97,7 +97,7 @@ class AbstractHttpServer {
   virtual void DoStop() = 0;
 };
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard
 
-#endif  // CPP_RABBIT_RABBIT_ABSTRACT_HTTP_SERVER_H_
+#endif  // CPP_LEOPARD_LEOPARD_ABSTRACT_HTTP_SERVER_H_

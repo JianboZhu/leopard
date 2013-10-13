@@ -11,7 +11,7 @@
 //          Now, this handler supports getting flags of several specified
 //      files as parameters passed to this handler. If there is no file
 //      specified, it will return all the flags of the host application program,
-//      even the 'rabbit' project and the 'gflags' project itself.
+//      even the 'leopard' project and the 'gflags' project itself.
 //
 //      A valid request url looks like:
 //          "http://10.10.101.101:8081/gflags/get_gflags?file=hello_world.cpp
@@ -20,10 +20,10 @@
 //      'world_hello.cpp'.
 //      Actually, the key 'file' is useless, you can change it to any word
 //      you want. Another point you need to know is that, the real filename
-//      (path) recorded by 'gflags' may be 'qiyi/example/hello_world.cpp',
+//      (path) recorded by 'gflags' may be 'example/hello_world.cpp',
 //      a tricky detail behind the code is any sub-string of the real filename
 //      works! That means, you can use 'hello_world' to get flags of
-//      'qiyi/example/hello_world.cpp', of course, other files contaning the
+//      'example/hello_world.cpp', of course, other files contaning the
 //      string 'hello_world' will be responsed too.
 //
 //  (2) SetFlags
@@ -35,15 +35,15 @@
 //      a successful message will be sent to you.
 //
 
-#ifndef CPP_RABBIT_RABBIT_HANDLER_GFLAGS_HANDLER_H_
-#define CPP_RABBIT_RABBIT_HANDLER_GFLAGS_HANDLER_H_
+#ifndef CPP_LEOPARD_LEOPARD_HANDLER_GFLAGS_HANDLER_H_
+#define CPP_LEOPARD_LEOPARD_HANDLER_GFLAGS_HANDLER_H_
 
 #include <string>
 #include <utility>
 #include <vector>
 
-namespace cpp_rabbit {
-namespace rabbit {
+namespace cpp_leopard {
+namespace leopard {
 
 // NOTE:
 // (1) this class can NOT be instantiated
@@ -67,7 +67,7 @@ class GFlagsHandler {
   GFlagsHandler();
 };
 
-}  // namespace rabbit
-}  // namespace cpp_rabbit
+}  // namespace leopard
+}  // namespace cpp_leopard
 
-#endif  // CPP_RABBIT_RABBIT_HANDLER_GFLAGS_HANDLER_H_
+#endif  // CPP_LEOPARD_LEOPARD_HANDLER_GFLAGS_HANDLER_H_

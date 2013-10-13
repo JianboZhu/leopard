@@ -1,6 +1,6 @@
 # Author: Jianbo Zhu (jbzhu2011@gmail.com)
 #
-# blade BUILD file for common handlers provided by 'rabbit'
+# blade BUILD file for common handlers provided by 'leopard'
 
 cc_library(
     name = 'gflags_handler',
