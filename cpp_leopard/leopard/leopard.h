@@ -1,6 +1,6 @@
 // Author: Jianbo Zhu (jbzhu2011@gmail.com)
 //
-// Rabbit is a smart(simple, functional, embeddable) online debug framework.
+// Leopard is a smart(simple, functional, embeddable) online debug framework.
 //
 
 #ifndef CPP_LEOPARD_LEOPARD_LEOPARD_H_
